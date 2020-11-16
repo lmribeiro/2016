@@ -143,30 +143,5 @@
             ga('send', 'pageview');
 
         </script>
-        <script type="text/javascript" id="moinloader" src="https://widget.moin.ai/moin-loader.js?id=9f110b237250ba8ca582b84ad22f7e25ba9154d77a15654d592e71dc42258edd"></script>
-
-        <script>
-        //ChatWidgetReady function signals that the script is fully operational
-        //this function is called when the client side api can be accessed
-        var chatWidgetReady = function() {
-             //place your own logic in this function.
-             //example for teaser
-             window.knowhere.api.teaser({
-               showTeaser: true,
-               showAvatar: true,
-               message: 'Je suis votre nouveau compagnon, posez-moi vos questions ',
-               quickActions: [{
-                   text: 'Poser une question',
-                   intent: 'start'
-                 },
-                 {
-                   text: 'Covid Tests',
-                   intent: 'faq_covid_tests'
-                 }
-               ]
-            })
-        }
-        </script>
-
     </body>
 </html>
